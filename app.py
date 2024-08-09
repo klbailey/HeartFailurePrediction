@@ -25,7 +25,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Load the model
-model_path = 'C:/Users/klbai/OneDrive/Desktop/Capstone/Final1/random_forest_model_best.joblib'
+# model_path = 'C:/Users/klbai/OneDrive/Desktop/Capstone/Final1/random_forest_model_best.joblib'
+model_path = 'random_forest_model_best.joblib'
 model = joblib.load(model_path)
 
 # Create and fit the scaler (Replace with the scaler fitted on your actual training data)
