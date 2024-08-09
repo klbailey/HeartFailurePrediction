@@ -4,7 +4,14 @@ import joblib
 from sklearn.preprocessing import StandardScaler
 import sklearn
 # Print scikit-learn version
-st.write(f"scikit-learn version: {sklearn.__version__}")
+# st.write(f"scikit-learn version: {sklearn.__version__}")
+# print("pandas version:", pd.__version__)
+# print("streamlit version:", st.__version__)
+# Display joblib version
+# st.write(f"joblib version: {joblib.__version__}")
+# import sys
+# print("Python version:", sys.version)
+
 # Title and summary
 st.markdown("<h1 style='text-align: center;'>Heart Failure Prediction</h1>", unsafe_allow_html=True)
 
@@ -30,7 +37,7 @@ st.markdown("""
 # model_path = 'C:/Users/klbai/OneDrive/Desktop/Capstone/Final1/random_forest_model_best.joblib'
 model_path = 'random_forest_model_best.joblib'
 model = joblib.load(model_path)
-
+print(type(model))
 # Create and fit the scaler (Replace with the scaler fitted on your actual training data)
 example_train_data = pd.DataFrame({
     'time': [10, 20, 30],
