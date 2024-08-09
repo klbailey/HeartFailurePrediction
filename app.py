@@ -2,7 +2,9 @@ import pandas as pd
 import streamlit as st
 import joblib
 from sklearn.preprocessing import StandardScaler
-
+import sklearn
+# Print scikit-learn version
+st.write(f"scikit-learn version: {sklearn.__version__}")
 # Title and summary
 st.markdown("<h1 style='text-align: center;'>Heart Failure Prediction</h1>", unsafe_allow_html=True)
 
